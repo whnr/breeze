@@ -39,10 +39,10 @@
       @include border-radius($button-radius);
       @include font-size($larger);
       &:hover {
-        background: lighten($navbar-color, 5%);
+        background: $nav-contrast-color;
       }
       &:active, &.active {
-        background: darken($navbar-color, 5%);
+        background: $nav-contrast-color;
       }
     }
   }
@@ -63,7 +63,7 @@
     }
   }
 
-  a { color: $navbar-link-color; }
+  a { color: $navbar-logo-color; }
 
   // Navbar Logo Mobile Styles
   @include respond(all-phones) {
@@ -97,13 +97,13 @@
     left: 0;
     overflow: hidden;
     text-align: center;
-    background: darken($navbar-color, 5%);
+    background: $navbar-color;
     &.active {
       height: auto;
       max-height: 600px;
       z-index: 999998;
       @include transition-duration(.5s);
-      @include box-shadow(0 2px 2px darken($navbar-color, 15%));
+      @include box-shadow(0 2px 2px $navbar-color);
     }
   }
 
@@ -140,7 +140,7 @@
       }
     }
     .btn {
-      border-color: darken($navbar-color, 30%) !important;
+      border-color: $nav-border-color;
     }
     &.field {
       margin-bottom: 0 !important;
@@ -149,9 +149,9 @@
         padding: 0 $gutter-in-px;
       }
       input.search {
-        background: darken($navbar-color, 20%);
+        background: $nav-contrast-color;
         border: none;
-        color: $default-color;
+        color: $body-font-color;
       }
     }
     .dropdown {
@@ -173,12 +173,12 @@
         @include box-shadow(none !important);
       }
       &.active .dropdown {
-        border-bottom: 1px solid darken($navbar-color, 10%);
+        border-bottom: 1px solid $nav-border-color;
       }
       &.active .dropdown ul {
         position: relative;
         top: 0;
-        background: darken($navbar-color, 8%);
+        background: $nav-contrast-color;
         min-height: 50px;
         max-height: 250px;
         height: auto;
@@ -186,10 +186,10 @@
         @include box-shadow(none !important);
         li {
           min-height: 50px;
-          border-bottom: darken($navbar-color, 5%);
+          border-bottom: $nav-border-color; 
           a {
-            color: $white;
-            border-bottom: 1px solid darken($navbar-color, 10%);
+            color: $navbar-link-color;
+            border-bottom: 1px solid $nav-border-color;
             &:hover {color: $body-link-color;}
           }
         }
@@ -230,7 +230,7 @@
   max-width: $min-device-width;
   height: 0;
   position: absolute;
-  background: lighten($default-color, 3%);
+  background: $nav-contrast-color;
   overflow: hidden;
   z-index: 999;
   // Navigation Dropdown Mobile Specific Styles
@@ -242,12 +242,12 @@
       @include box-shadow(none !important);
     }
     &.active .dropdown {
-      border-bottom: 1px solid darken($navbar-color, 10%);
+      border-bottom: 1px solid $nav-border-color;
     }
     &.active .dropdown ul {
       position: relative;
       top: 0;
-      background: darken($navbar-color, 8%);
+      background: $nav-contrast-color;
       min-height: 50px;
       max-height: 250px;
       height: auto;
@@ -255,10 +255,10 @@
       @include box-shadow(none !important);
       li {
         min-height: 50px;
-        border-bottom: darken($navbar-color, 5%);
+        border-bottom: $nav-border-color;
         a {
-          color: $white;
-          border-bottom: 1px solid darken($navbar-color, 10%);
+          color: $navbar-link-color;
+          border-bottom: 1px solid $nav-border-color;
           &:hover {color: $body-link-color;}
         }
       }
@@ -294,7 +294,7 @@
     }
     .dropdown {
       display: none;
-      background: lighten($default-color, 10%);
+      background: $nav-contrast-color;
     }
   }
   li:first-child a {
@@ -305,7 +305,7 @@
 .gumby-no-touch .navbar ul li:hover > a,
 .gumby-touch .navbar ul li.active > a {
   position: relative;
-  background: $info-hover-color;
+  background: $nav-hover-color;
   z-index: 1000;
 }
 
@@ -317,7 +317,7 @@
   height: auto;
   width: 100%;
   padding: 0;
-  border-top: 1px solid darken($navbar-color, 5%);
+  border-top: 1px solid $nav-border-color;
   @include box-shadow(0px 3px 4px rgba(0,0,0,.3));
 }
 
@@ -331,12 +331,12 @@
   @include transition-duration(.5s);
   @include respond(all-phones) {
     overflow: auto;
-    background: darken($navbar-color, 8%);
+    background: $nav-contrast-color;
     li {
-      border-bottom: darken($navbar-color, 5%);
+      border-bottom: $nav-border-color;
       a {
-        color: $white;
-        border-bottom: 1px solid darken($navbar-color, 10%);
+        color: $navbar-link-color;
+        border-bottom: 1px solid $nav-border-color;
         &:hover {color: $body-link-color;}
       }
     }
@@ -356,7 +356,7 @@
     position: relative;
     left: 0;
     ul {
-      background: darken($navbar-color, 15%) !important;
+      background: $nav-contrast-color !important;
     }
   }
 }

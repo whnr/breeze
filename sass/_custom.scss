@@ -8,24 +8,52 @@ h4 { @include font-size($med);}
 h5 { @include font-size($norm);}
 
 @include respond(all-phones) {
-  h1 { @include font-size($xlarge);}
-  h2 { @include font-size($larger);}
+    h1 { @include font-size($xlarge);}
+    h2 { @include font-size($larger);}
 }
 
-p {
-    font-family: $font-content;
+#dokuwiki__content {
+    p, td, th, .fn, a {
+        font-family: $font-content;
+    }
+
+    sub, sup {
+        font-size: $small;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+    }
+    sup {
+        top: -0.5em;
+    }
+    sub {
+        bottom: -0.25em;
+    }
+
+    .fn {
+        font-size: $small;
+    }
+
+    pre, code, kbd, samp {
+        font-family: $font-monospace;
+    }
+    code, kbd, samp {
+        word-break: break-all;
+    }
+    pre { 
+        font-size: $small;
+        padding: .5em 1em;
+        margin-bottom: $base-line-height / 2;
+        background-color: $pre-bg-color;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
 }
 
-pre, code, kbd, samp {
-    font-family: $font-monospace;
-}
-code, kbd, samp {
-    word-break: break-all;
-}
-pre { 
-    padding: 1em;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
+hr {
+    border: none;
+    height: 1px;
+    background-color: $horizontal-rule-color;
 }
 
 // Sidebar
@@ -36,38 +64,10 @@ pre {
         line-height: $norm;
     }
     hr {
-        border: 1px solid $horizontal-rule-color;
         margin: 6px 0 6px;
     }
 }
 
-/*
-// Navigation Bar
-.navbar {
-    .row {@include line-and-height($nav-height);}
-    //form, .field {
-    //    margin: 0;
-    //}
-    #nav__logo {
-        //@include respondingcols(5,4,7);
-        @include line-and-height($nav-height);
-        h1, a {
-            font-family: "Merriweather";
-            font-weight: $font-weight-bold;
-            padding: 0;
-            line-height: inherit;
-            color: $navbar-logo-color
-        }
-    }
-    #nav__menu {
-        //@include respondingcols(7,8,5);
-        @include line-and-height($nav-height);
-        ul {
-            float: right;
-        }
-    }
-}
-*/
 // TOC
 #dw__toc {
     float: left;

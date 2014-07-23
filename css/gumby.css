@@ -667,8 +667,8 @@ p { font-family: "Open Sans"; font-weight: 400; font-size: 16px; font-size: 1rem
 p.lead { font-size: 20px; font-size: 1.25rem; margin-bottom: 18px; }
 @media only screen and (max-width: 768px) { p { font-size: 17.6px; font-size: 1.1rem; line-height: 1.625em; } }
 
-a { color: #cb4b16; text-decoration: none; outline: 0; line-height: inherit; }
-a:hover { color: #586e75; }
+a { color: #268bd2; text-decoration: none; outline: 0; line-height: inherit; }
+a:hover { color: #268bd2; }
 
 /*=====================================================
  Lists  ======================================================*/
@@ -1273,7 +1273,7 @@ img { -ms-interpolation-mode: bicubic; }
   .navbar ul li.active .dropdown ul { position: relative; top: 0; background: #e2d8b8; min-height: 50px; max-height: 250px; height: auto; overflow: auto; -webkit-box-shadow: none !important; -moz-box-shadow: none !important; box-shadow: none !important; }
   .navbar ul li.active .dropdown ul li { min-height: 50px; border-bottom: #e7dec3; }
   .navbar ul li.active .dropdown ul li a { color: white; border-bottom: 1px solid #dfd4b1; }
-  .navbar ul li.active .dropdown ul li a:hover { color: #cb4b16; } }
+  .navbar ul li.active .dropdown ul li a:hover { color: #268bd2; } }
 
 @media only screen and (min-width: 768px) and (max-width: 939px) { .navbar > ul > li > .btn a { padding: 0 13px 0 13px !important; }
   .navbar ul > li .dropdown ul li.active .dropdown { left: -320px; } }
@@ -1297,12 +1297,12 @@ img { -ms-interpolation-mode: bicubic; }
   .navbar li .dropdown.active .dropdown ul { position: relative; top: 0; background: #e2d8b8; min-height: 50px; max-height: 250px; height: auto; overflow: auto; -webkit-box-shadow: none !important; -moz-box-shadow: none !important; box-shadow: none !important; }
   .navbar li .dropdown.active .dropdown ul li { min-height: 50px; border-bottom: #e7dec3; }
   .navbar li .dropdown.active .dropdown ul li a { color: white; border-bottom: 1px solid #dfd4b1; }
-  .navbar li .dropdown.active .dropdown ul li a:hover { color: #cb4b16; } }
+  .navbar li .dropdown.active .dropdown ul li a:hover { color: #268bd2; } }
 
 .navbar li .dropdown ul { margin: 0; display: block; }
 .navbar li .dropdown ul > li { position: relative; display: block; width: 100%; float: left; text-align: left; height: auto; -webkit-border-radius: none; -moz-border-radius: none; -ms-border-radius: none; -o-border-radius: none; border-radius: none; }
 @media only screen and (min-width: 768px) and (max-width: 939px) { .navbar li .dropdown ul > li { max-width: 320px; word-wrap: break-word; } }
-.navbar li .dropdown ul > li a { display: block; padding: 0 20px; color: #cb4b16; border-bottom: 1px solid #839496; text-shadow: none; height: 51px; line-height: 49px; }
+.navbar li .dropdown ul > li a { display: block; padding: 0 20px; color: #268bd2; border-bottom: 1px solid #839496; text-shadow: none; height: 51px; line-height: 49px; }
 @media only screen and (max-width: 767px) { .navbar li .dropdown ul > li a { padding: 0 20px; } }
 .navbar li .dropdown ul > li .dropdown { display: none; background: white; }
 .navbar li .dropdown ul li:first-child a { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; }
@@ -1315,7 +1315,7 @@ img { -ms-interpolation-mode: bicubic; }
 @media only screen and (max-width: 767px) { .gumby-no-touch .navbar ul li:hover .dropdown ul { overflow: auto; background: #e2d8b8; }
   .gumby-no-touch .navbar ul li:hover .dropdown ul li { border-bottom: #e7dec3; }
   .gumby-no-touch .navbar ul li:hover .dropdown ul li a { color: white; border-bottom: 1px solid #dfd4b1; }
-  .gumby-no-touch .navbar ul li:hover .dropdown ul li a:hover { color: #cb4b16; } }
+  .gumby-no-touch .navbar ul li:hover .dropdown ul li a:hover { color: #268bd2; } }
 
 .gumby-no-touch .navbar li .dropdown ul > li:hover .dropdown, .gumby-touch .navbar li .dropdown ul > li.active .dropdown { border-top: none; display: block; position: absolute; z-index: 9999; left: 100%; top: 0px; margin-top: 0; }
 @media only screen and (max-width: 767px) { .gumby-no-touch .navbar li .dropdown ul > li:hover .dropdown, .gumby-touch .navbar li .dropdown ul > li.active .dropdown { position: relative; left: 0; }
@@ -1573,7 +1573,7 @@ label + .xnarrow:last-child, label + .narrow:last-child, label + .normal:last-ch
 .badge.warning a, .label.warning a { color: black; }
 .badge.success, .label.success { background: #859900; border: 1px solid #859900; }
 .badge.light, .label.light { background: #fff; color: #586e75; border: 1px solid #fdf6e3; }
-.badge.light a, .label.light a { color: #cb4b16; }
+.badge.light a, .label.light a { color: #268bd2; }
 .badge.dark, .label.dark { background: #212121; border: 1px solid #212121; }
 
 .badge { padding: 0 10px; font-size: 14px; font-size: 0.875rem; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; }
@@ -1719,7 +1719,7 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
   .navbar ul li.active .dropdown ul { position: relative; top: 0; background: #fdf6e3; min-height: 50px; max-height: 250px; height: auto; overflow: auto; -webkit-box-shadow: none !important; -moz-box-shadow: none !important; box-shadow: none !important; }
   .navbar ul li.active .dropdown ul li { min-height: 50px; border-bottom: #839496; }
   .navbar ul li.active .dropdown ul li a { color: #586e75; border-bottom: 1px solid #839496; }
-  .navbar ul li.active .dropdown ul li a:hover { color: #cb4b16; } }
+  .navbar ul li.active .dropdown ul li a:hover { color: #268bd2; } }
 
 .navbar .field { margin: 0; }
 
@@ -1735,12 +1735,12 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
   .navbar li .dropdown.active .dropdown ul { position: relative; top: 0; background: #fdf6e3; min-height: 50px; max-height: 250px; height: auto; overflow: auto; -webkit-box-shadow: none !important; -moz-box-shadow: none !important; box-shadow: none !important; }
   .navbar li .dropdown.active .dropdown ul li { min-height: 50px; border-bottom: #839496; }
   .navbar li .dropdown.active .dropdown ul li a { color: #586e75; border-bottom: 1px solid #839496; }
-  .navbar li .dropdown.active .dropdown ul li a:hover { color: #cb4b16; } }
+  .navbar li .dropdown.active .dropdown ul li a:hover { color: #268bd2; } }
 
 .navbar li .dropdown ul { margin: 0; display: block; }
 .navbar li .dropdown ul > li { position: relative; display: block; width: 100%; float: left; text-align: left; height: auto; -webkit-border-radius: none; -moz-border-radius: none; -ms-border-radius: none; -o-border-radius: none; border-radius: none; }
 @media only screen and (min-width: 768px) and (max-width: 939px) { .navbar li .dropdown ul > li { max-width: 320px; word-wrap: break-word; } }
-.navbar li .dropdown ul > li a { display: block; padding: 0 20px; color: #cb4b16; border-bottom: 1px solid #839496; text-shadow: none; height: 51px; line-height: 49px; }
+.navbar li .dropdown ul > li a { display: block; padding: 0 20px; color: #268bd2; border-bottom: 1px solid #839496; text-shadow: none; height: 51px; line-height: 49px; }
 @media only screen and (max-width: 767px) { .navbar li .dropdown ul > li a { padding: 0 20px; } }
 .navbar li .dropdown ul > li .dropdown { display: none; background: #fdf6e3; }
 .navbar li .dropdown ul li:first-child a { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; }
@@ -1753,7 +1753,7 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 @media only screen and (max-width: 767px) { .gumby-no-touch .navbar ul li:hover .dropdown ul { overflow: auto; background: #fdf6e3; }
   .gumby-no-touch .navbar ul li:hover .dropdown ul li { border-bottom: #839496; }
   .gumby-no-touch .navbar ul li:hover .dropdown ul li a { color: #586e75; border-bottom: 1px solid #839496; }
-  .gumby-no-touch .navbar ul li:hover .dropdown ul li a:hover { color: #cb4b16; } }
+  .gumby-no-touch .navbar ul li:hover .dropdown ul li a:hover { color: #268bd2; } }
 
 .gumby-no-touch .navbar li .dropdown ul > li:hover .dropdown, .gumby-touch .navbar li .dropdown ul > li.active .dropdown { border-top: none; display: block; position: absolute; z-index: 9999; left: 100%; top: 0px; margin-top: 0; }
 @media only screen and (max-width: 767px) { .gumby-no-touch .navbar li .dropdown ul > li:hover .dropdown, .gumby-touch .navbar li .dropdown ul > li.active .dropdown { position: relative; left: 0; }
@@ -1789,7 +1789,13 @@ h5 { font-size: 16px; font-size: 1rem; }
 
 @media only screen and (max-width: 767px) { h1 { font-size: 42px; font-size: 2.625rem; }
   h2 { font-size: 30px; font-size: 1.875rem; } }
-#dokuwiki__content p, #dokuwiki__content td, #dokuwiki__content th, #dokuwiki__content .fn, #dokuwiki__content a { font-family: "Merriweather"; }
+#dokuwiki__content p, #dokuwiki__content a, #dokuwiki__content li, #dokuwiki__content td, #dokuwiki__content th, #dokuwiki__content .fn { font-family: "Merriweather"; }
+@media only screen and (max-width: 768px) { #dokuwiki__content p { font-size: 16px; font-size: 1rem; } }
+#dokuwiki__content .wikilink2 { color: #cb4b16; border: none; }
+#dokuwiki__content ul, #dokuwiki__content ol { margin-left: 2em; margin-bottom: 13px; }
+#dokuwiki__content li { padding: 0; }
+#dokuwiki__content ul li { list-style: disc; }
+#dokuwiki__content ul > li > ul, #dokuwiki__content ul > li > ol, #dokuwiki__content ol > li > ol, #dokuwiki__content ol > li > ul { margin: 0 0 0 1em; }
 #dokuwiki__content sub, #dokuwiki__content sup { font-size: 13px; line-height: 0; position: relative; vertical-align: baseline; }
 #dokuwiki__content sup { top: -0.5em; }
 #dokuwiki__content sub { bottom: -0.25em; }
@@ -1797,6 +1803,7 @@ h5 { font-size: 16px; font-size: 1rem; }
 #dokuwiki__content pre, #dokuwiki__content code, #dokuwiki__content kbd, #dokuwiki__content samp { font-family: monospace; }
 #dokuwiki__content code, #dokuwiki__content kbd, #dokuwiki__content samp { word-break: break-all; }
 #dokuwiki__content pre { font-size: 13px; padding: .5em 1em; margin-bottom: 13px; background-color: #fdf6e3; overflow: scroll; -webkit-overflow-scrolling: touch; }
+#dokuwiki__content abbr, #dokuwiki__content acronym { text-transform: none; font-size: inherit; color: inherit; border-bottom: 1px solid #859900; }
 
 hr { border: none; height: 1px; background-color: #839496; }
 
@@ -1808,6 +1815,7 @@ hr { border: none; height: 1px; background-color: #839496; }
 #dw__toc.active { display: none; }
 #dw__toc h3 { display: none; }
 #dw__toc ul { margin: 0 .5em .5em 0; }
+#dw__toc a { line-height: 13px; margin-bottom: 3px; }
 @media only screen and (max-width: 767px) { #dw__toc { display: none; }
   #dw__toc.active { display: inherit; } }
 

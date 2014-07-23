@@ -13,8 +13,31 @@ h5 { @include font-size($norm);}
 }
 
 #dokuwiki__content {
-    p, td, th, .fn, a {
+    p, a, li, td, th, .fn {
         font-family: $font-content;
+    }
+    
+    p {
+        @include respond(portrait-tablets) {
+            @include font-size($base-font-size);
+        }
+    }
+    .wikilink2 {
+        color: $orange;
+        border: none;
+    }
+    
+    ul, ol {
+        margin-left: 2em;
+        margin-bottom: $base-line-height / 2;
+    }
+    li { padding: 0; }
+    ul li { list-style: disc; } 
+    ul > li > ul, 
+    ul > li > ol, 
+    ol > li > ol, 
+    ol > li > ul {
+        margin: 0 0 0 1em;
     }
 
     sub, sup {
@@ -47,6 +70,13 @@ h5 { @include font-size($norm);}
         background-color: $pre-bg-color;
         overflow: scroll;
         -webkit-overflow-scrolling: touch;
+    }
+
+    abbr, acronym {
+        text-transform: none;
+        font-size: inherit;
+        color: inherit;
+        border-bottom: 1px solid $green;
     }
 }
 
@@ -83,6 +113,10 @@ hr {
     }
     ul {
         margin: 0 .5em .5em 0;
+    }
+    a {
+        line-height: $small;
+        margin-bottom: $norm - $small;
     }
     @include respond(all-phones) {
         display: none;

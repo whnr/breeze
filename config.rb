@@ -7,11 +7,11 @@ extensions_dir = "bower_components/gumby/sass/extensions"
 Compass::Frameworks.register('modular-scale', :path => File.expand_path("#{extensions_dir}/modular-scale"))
 
 # Uncomment these to use regular Ruby gems.
-# require 'modular-scale'
+require 'modular-scale'
 # require 'sassy-math'
 
 # Set this to the root of your project when deployed:
-http_path = "/"
+http_path = "/clean/"
 css_dir = "css"
 sass_dir = "sass"
 images_dir = "img"

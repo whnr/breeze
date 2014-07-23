@@ -1,5 +1,8 @@
 // Welcome to Gumby 2.0 Settings.
 // Happy Tinkering!
+//
+// Lines with the comment "custom" are custom for the dokuwiki template
+//
 
 
 // Grid Settings
@@ -22,6 +25,8 @@ $font-family: "Open Sans";
 $font-style-italic: italic;
 $icons: entypo;
 $font-smoothing: antialiased;
+$font-content: "Merriweather"; // Custom
+$font-monospace: monospace;
 
 // Font Weights
 $font-weight-bold: 700;
@@ -53,8 +58,8 @@ $base-size: $base-font-size $importantNum;
 // Gumby Default Scale Values: 16, 18, 26, 30, 42, 48, 68, 78, 110, 126;
 
 // Sizing
-$xsmall: ms(-2);
-$small: ms(-1);
+$xsmall: ms(-1);
+$small: 13px;
 $norm: ms(0);									// $base-font-size (16px == default)
 $med: ms(1);
 $large: ms(2);
@@ -78,6 +83,7 @@ $body-link-hover-color: #c03d20 !default;
 $global-bg-color: #fff;
 $navbar-color: #4a4d50;
 $navbar-link-color: #fff;
+$navbar-logo-color: $navbar-link-color; //custom
 
 $primary-color: #3085d6;
 $secondary-color: #42a35a;
@@ -130,7 +136,8 @@ $form-select-color: #555;
 $tab-height: 42px;
 
 // Navigation
-$navcontain-height: 80px; // makes space at the top of a document for when using a fixed nav
+$nav-height: 50px;
+$navcontain-height: 55px; // makes space at the top of a document for when using a fixed nav
 
 // Drawers & Modals
 $modal-overlay-color: rgba(0, 0, 0, 0.8);

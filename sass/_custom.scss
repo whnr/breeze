@@ -1,1 +1,113 @@
 // Your custom SCSS should be written here...
+
+// Typography
+h1 { @include font-size($xlarge);}
+h2 { @include font-size($larger);}
+h3 { @include font-size($large);}
+h4 { @include font-size($med);}
+h5 { @include font-size($norm);}
+
+@include respond(all-phones) {
+  h1 { @include font-size($xlarge);}
+  h2 { @include font-size($larger);}
+}
+
+p {
+    font-family: $font-content;
+}
+
+pre, code, kbd, samp {
+    font-family: $font-monospace;
+}
+code, kbd, samp {
+    word-break: break-all;
+}
+pre { 
+    padding: 1em;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+// Sidebar
+#dokuwiki__sidebar {
+    h4 { font-size: $med; }
+    div, h5, p, a, li {
+        font-size: $small;
+        line-height: $norm;
+    }
+    hr {
+        border: 1px solid $horizontal-rule-color;
+        margin: 6px 0 6px;
+    }
+}
+
+/*
+// Navigation Bar
+.navbar {
+    .row {@include line-and-height($nav-height);}
+    //form, .field {
+    //    margin: 0;
+    //}
+    #nav__logo {
+        //@include respondingcols(5,4,7);
+        @include line-and-height($nav-height);
+        h1, a {
+            font-family: "Merriweather";
+            font-weight: $font-weight-bold;
+            padding: 0;
+            line-height: inherit;
+            color: $navbar-logo-color
+        }
+    }
+    #nav__menu {
+        //@include respondingcols(7,8,5);
+        @include line-and-height($nav-height);
+        ul {
+            float: right;
+        }
+    }
+}
+*/
+// TOC
+#dw__toc {
+    float: left;
+    margin: 0;
+    width: 100%;
+    background-color: inherit;
+    color: inherit;
+    &.active {
+        display:none;
+    }
+    h3 {
+        display:none; //Don't use the original DW heading
+    }
+    ul {
+        margin: 0 .5em .5em 0;
+    }
+    @include respond(all-phones) {
+        display: none;
+        &.active {
+            display: inherit;
+        }
+    }
+}
+
+// Status Bar and Page Info
+#status__bar, #page__info {
+    font-size: $small;
+    margin-bottom: 0.5em;
+}
+
+// Visibility
+
+.hide-on-phones {
+    @include hidden(portrait-tablets);
+    @include visible(desktop);
+}
+
+.show-on-phones {
+    @include visible(portrait-tablets);
+    @include hidden(desktop);
+}
+
+

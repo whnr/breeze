@@ -118,3 +118,44 @@ if (!function_exists('tpl_classes')) {
         return join(' ', $classes);
     }
 }
+
+/**
+ * Special Functions for this template
+ *
+ * @author Florian Wehner <florian@whnr.de>
+ *
+ */
+
+// If output exists, put the content of $before and $after around it
+function _tpl_check_if_output_and_amend($before="", $tpl_function="", $after="") {
+    ob_start();
+    eval($tpl_function.";");
+    $function_output = ob_get_clean(); 
+    
+    if(strlen($function_output)==0) return false;
+
+    print $before;
+    print $function_output;
+    print $after;
+    return true;
+}
+
+// Copied and adjusted from core for navbar search form
+function _tpl_draw_searchform($ajax = true, $autocomplete = true) {
+    global $lang;
+    global $ACT;
+    global $QUERY;
+
+    // don't print the search form if search action has been disabled
+    if(!actionOK('search')) return false;
+
+    print '<form action="'.wl().'" accept-charset="utf-8" class="search" id="dw__search" method="get" role="search"><div class="field">';
+    print '<input type="hidden" name="do" value="search" />';
+    print '<input type="search" ';
+    if($ACT == 'search') print 'value="'.htmlspecialchars($QUERY).'" ';
+    if(!$autocomplete) print 'autocomplete="off" ';
+    print 'id="qsearch__in" accesskey="f" name="id" class="search input" title="[F]" placeholder="'.$lang['btn_search'].'"/>';
+    if($ajax) print '<div id="qsearch__out" class="ajax_qsearch JSpopup"></div>';
+    print '</div></form>';
+    return true;
+}

@@ -2,6 +2,6 @@ base     starter
 author   Florian Wehner
 email    florian@whnr.de
 date     2014- 
-name     Clean 
-desc     It's so clean it could be a zen garden. 
+name     Breeze 
+desc     Clean and clear Typography. Colors based on Solarized. Gumby Framework underneath.
 url       

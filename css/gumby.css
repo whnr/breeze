@@ -1839,7 +1839,7 @@ h5 { font-size: 16px; font-size: 1rem; }
 #dokuwiki__content sup { top: -0.5em; }
 #dokuwiki__content sub { bottom: -0.25em; }
 #dokuwiki__content .fn { font-size: 13px; }
-#dokuwiki__content pre, #dokuwiki__content code, #dokuwiki__content kbd, #dokuwiki__content samp { font-family: monospace; }
+#dokuwiki__content pre, #dokuwiki__content code, #dokuwiki__content kbd, #dokuwiki__content samp { font-family: "Monaco", "Lucida Console", monospace; }
 #dokuwiki__content code, #dokuwiki__content kbd, #dokuwiki__content samp { word-break: break-all; }
 #dokuwiki__content pre { font-size: 13px; padding: .5em 1em; margin-bottom: 13px; background-color: #fdf6e3; overflow: scroll; -webkit-overflow-scrolling: touch; }
 #dokuwiki__content abbr, #dokuwiki__content acronym { text-transform: none; font-size: inherit; color: inherit; border-bottom: 1px solid #859900; }

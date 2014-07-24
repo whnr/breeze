@@ -1,11 +1,11 @@
 <?php
 /**
-* DokuWiki Clean Template
-*
-* @link     FIXME 
-* @author   FIXME 
-* @license  FIXME 
-*/
+ * DokuWiki Clean Template
+ *
+ * @link     FIXME 
+ * @author   FIXME 
+ * @license  FIXME 
+ */
 
 // error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE); ini_set('display_errors', '1');  // Switch on for error reporting
 
@@ -102,20 +102,14 @@ if (!defined('DOKU_INC')) die(); /* must be run from within DokuWiki */
                 <?php if ($conf['youarehere']) { tpl_youarehere(); } ?>
             </div>
             <div class="row">
-                <?php
-                // render the content into buffer for later use
-                ob_start();
-                tpl_content(false);
-                $buffer = ob_get_clean();
-                ?>
+<?php
+// render the content into buffer for later use
+ob_start();
+tpl_content(false);
+$buffer = ob_get_clean();
+?>
 
                 <div class="three columns" id="dokuwiki__sidebar">
-                    <nav gumby-fixed="top" gumby-top="60" gumby-offset="60"> 
-                        <div class="row hide-on-phones">
-                            <div align="center">
-                                <a href="#" class="skip" gumby-goto="top" gumby-duration="600"><i class="icon icon-up-open-mini"></i><?php echo $lang['btn_top']?><i class="icon icon-up-open-mini"></i></a>
-                            </div>
-                        </div>
                         <div class="row" id="toc__container">
                             <hr>
                             <h4 class="toggle" gumby-trigger="#dw__toc" style="cursor:pointer" id="toc__header"><?php echo $lang['toc']?>
@@ -124,17 +118,13 @@ if (!defined('DOKU_INC')) die(); /* must be run from within DokuWiki */
                             <?php tpl_toc()?>
                             <hr>
                         </div>
-                        <div class="row hide-on-phones" align="center" id="page__info">
-                            <?php _tpl_check_if_output_and_amend("", 
-                            "tpl_userinfo()", 
-                            "<br>")?>
-                            <?php tpl_pageinfo()?>
+                        <div class="row hide-on-phones" gumby-fixed="top" gumby-top="60" gumby-offset="60" style="text-align: center;">
+                                <a href="#" class="skip" gumby-goto="top" gumby-duration="600"><i class="icon icon-up-open-mini"></i><?php echo $lang['btn_top']?><i class="icon icon-up-open-mini"></i></a>
                         </div>
-                    </nav>
                 </div> 
                 <div class="nine columns" id="dokuwiki__content">
                     <?php echo $buffer?>
-                    <div class="row show-on-phones" align="center" id="page__info">
+                    <div class="row" id="page__info">
                         <?php tpl_userinfo()?> – <?php tpl_pageinfo()?>
                     </div>
                 </div> 
@@ -144,23 +134,23 @@ if (!defined('DOKU_INC')) die(); /* must be run from within DokuWiki */
 
         <!-- Grab Google CDN's jQuery, fall back to local if offline -->
         <!-- 2.0 for modern browsers, 1.10 for .oldie -->
-        <script>
-            var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
-            if(!oldieCheck) {
-                document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
-            } else {
-                document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>');
-            }
-        </script>
-        <script>
-            if(!window.jQuery) {
-                if(!oldieCheck) {
-                    document.write('<script src="<?php echo tpl_basedir()?>bower_components/gumby/js/libs/jquery-2.0.2.min.js"><\/script>');
-                } else {
-                    document.write('<script src="<?php echo tpl_basedir()?>bower_components/gumby/js/libs/jquery-1.10.1.min.js"><\/script>');
-                }
-            }
-        </script>
+<script>
+var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
+if(!oldieCheck) {
+    document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
+} else {
+    document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>');
+}
+</script>
+<script>
+if(!window.jQuery) {
+    if(!oldieCheck) {
+        document.write('<script src="<?php echo tpl_basedir()?>bower_components/gumby/js/libs/jquery-2.0.2.min.js"><\/script>');
+    } else {
+        document.write('<script src="<?php echo tpl_basedir()?>bower_components/gumby/js/libs/jquery-1.10.1.min.js"><\/script>');
+    }
+}
+</script>
 
         <!--
         Include gumby.js followed by UI modules followed by gumby.init.js
@@ -205,9 +195,9 @@ function downloadJSAtOnload() {
 
         <!-- Change UA-XXXXX-X to be your site's ID -->
         <!--<script>
-    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
-    Modernizr.load({
-        load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+        window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+Modernizr.load({
+    load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
         });
         </script>-->
 

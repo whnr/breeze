@@ -141,8 +141,9 @@ $default-button-padding: $med;
 $default-button-height: 36px;
 
 // Form Elements
-$form-text-input-stroke: #ccc;
-$form-text-input-background: $white;
+$form-border-color: $base1;
+$form-text-input-stroke: $magenta;
+$form-text-input-background: $global-bg-color;
 $form-text-input-placeholder-color: $default-color;
 $form-text-input-color: $body-font-color;
 
@@ -173,9 +174,9 @@ $table-head-color: $body-font-color;
 $table-row-first-cell-font-weight: $font-weight-regular;
 $table-border-size: 2px;
 $table-border-style: solid;
-$table-border-color: $base0;
+$table-border-color: $base1;
 $table-cell-border-size: 1px;
-$table-cell-border-color: $base0;
+$table-cell-border-color: $base1;
 $table-cell-border-style: solid;
 // .rounded
 $table-border-radius: 4px;

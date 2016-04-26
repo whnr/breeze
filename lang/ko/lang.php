@@ -1,12 +1,9 @@
 <?php
 /**
- * Korean language file
+ * Korean language file for template
  *
- * @license    GPL 2 (http://www.gnu.org/licenses/gpl.html)
  */
 
-$lang['discussion']   = '토론';
-$lang['back_to_article'] = '위로 기사';
-$lang['userpage']       = '사용자 문서';
-
-//Setup VIM: ex: et ts=2 :
+$lang['discussion']        = '토론';
+$lang['back_to_article']   = '문서로 돌아가기';
+$lang['userpage']          = '사용자 문서';
